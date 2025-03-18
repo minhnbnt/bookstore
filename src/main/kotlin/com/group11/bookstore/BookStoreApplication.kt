@@ -4,10 +4,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.builder.SpringApplicationBuilder
 
 @SpringBootApplication
-class BookstoreApplication
+class BookStoreApplication
 
 fun main(args: Array<String>) {
-    SpringApplicationBuilder(BookstoreApplication::class.java)
+    SpringApplicationBuilder(BookStoreApplication::class.java)
         .headless(false)
         .run(*args)
 }
