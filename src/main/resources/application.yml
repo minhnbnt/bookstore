@@ -1,18 +1,18 @@
 logging:
   level:
-    org.hibernate.SQL: "TRACE"
+    org.hibernate.SQL: TRACE
 
 spring:
   application:
-    name: "bookstore"
+    name: bookstore
 
   datasource:
-    url: "jdbc:sqlite:db.sqlite3"
-    driver-class-name: "org.sqlite.JDBC"
+    url: jdbc:sqlite:db.sqlite3
+    driver-class-name: org.sqlite.JDBC
 
   jpa:
     hibernate:
-      ddl-auto: "update"
+      ddl-auto: update
 
     open-in-view: false
 
