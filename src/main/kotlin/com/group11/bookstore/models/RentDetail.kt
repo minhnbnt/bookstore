@@ -12,6 +12,9 @@ class RentDetail(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0,
 
+    @OneToOne(optional = true, mappedBy = "rentDetail")
+    var returnDetail: ReturnDetail?,
+
     @ManyToOne(optional = false)
     var book: Book,
 
@@ -23,4 +26,7 @@ class RentDetail(
 
     @OneToMany(mappedBy = "rentDetail")
     var rentPenalties: MutableList<RentPenalty>
-)
+) {
+
+    fun isReturned() = returnDetail != null
+}
