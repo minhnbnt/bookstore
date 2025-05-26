@@ -31,7 +31,7 @@ public class CustomerSearchFrame extends JFrame {
 
     public CustomerSearchFrame(
         CustomerRepository repository,
-        ReturnListFrame returnListFrame
+        @Lazy ReturnListFrame returnListFrame
     ) {
 
         super("CustomerSearchFrame");

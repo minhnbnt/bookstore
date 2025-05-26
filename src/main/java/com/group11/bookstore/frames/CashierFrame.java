@@ -16,7 +16,7 @@ public class CashierFrame extends JFrame {
 
     private User user;
 
-    public CashierFrame(CustomerSearchFrame customerSearchFrame) {
+    public CashierFrame(@Lazy CustomerSearchFrame customerSearchFrame) {
 
         super("CashierFrame");
 

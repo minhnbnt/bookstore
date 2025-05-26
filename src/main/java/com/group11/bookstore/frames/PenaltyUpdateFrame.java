@@ -2,6 +2,7 @@ package com.group11.bookstore.frames;
 
 import com.group11.bookstore.models.Penalty;
 import com.group11.bookstore.repositories.PenaltyRepository;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
@@ -27,7 +28,7 @@ public class PenaltyUpdateFrame extends JFrame {
 
     public PenaltyUpdateFrame(
         PenaltyRepository repository,
-        PenaltyAddFrame penaltyAddFrame
+        @Lazy PenaltyAddFrame penaltyAddFrame
     ) {
 
         super();

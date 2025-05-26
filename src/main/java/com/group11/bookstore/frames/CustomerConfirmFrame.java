@@ -18,11 +18,11 @@ public class CustomerConfirmFrame {
     public CustomerConfirmFrame(Customer customer) {
 
         var data = new Object[][]{
-            new Object[] {"ID", customer.getId()},
-            new Object[] {"Full name", customer.getFullName()},
-            new Object[] {"Address", customer.getAddress()},
-            new Object[] {"Email", customer.getEmail()},
-            new Object[] {"Phone number", customer.getPhoneNumber()}
+            new Object[]{"ID", customer.getId()},
+            new Object[]{"Full name", customer.getFullName()},
+            new Object[]{"Address", customer.getAddress()},
+            new Object[]{"Email", customer.getEmail()},
+            new Object[]{"Phone number", customer.getPhoneNumber()}
         };
 
         var tableModel = new DefaultTableModel();
@@ -33,8 +33,7 @@ public class CustomerConfirmFrame {
 
     public int getChosenValue(Frame parentFrame) {
         return JOptionPane.showConfirmDialog(
-            parentFrame,
-            panel,
+            parentFrame, panel,
             "JOptionPane",
             JOptionPane.YES_NO_OPTION
         );

@@ -3,6 +3,7 @@ package com.group11.bookstore.frames;
 import com.group11.bookstore.models.Book;
 import com.group11.bookstore.models.Penalty;
 import com.group11.bookstore.repositories.PenaltyRepository;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
@@ -33,7 +34,7 @@ public class BookDetailFrame extends JFrame {
 
     public BookDetailFrame(
         PenaltyRepository repository,
-        PenaltyUpdateFrame penaltyUpdateFrame
+        @Lazy PenaltyUpdateFrame penaltyUpdateFrame
     ) {
 
         super();

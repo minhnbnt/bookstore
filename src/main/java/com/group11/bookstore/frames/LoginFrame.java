@@ -2,6 +2,7 @@ package com.group11.bookstore.frames;
 
 import com.group11.bookstore.models.User;
 import com.group11.bookstore.services.UserService;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
@@ -14,7 +15,10 @@ public class LoginFrame extends JFrame {
     private JTextField txtUsername;
     private JPasswordField txtPassword;
 
-    public LoginFrame(UserService userService, CashierFrame cashierFrame) {
+    public LoginFrame(
+        UserService userService,
+        @Lazy CashierFrame cashierFrame
+    ) {
 
         super("LoginFrame");
 
